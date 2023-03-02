@@ -34,7 +34,7 @@ jobs:
 
 
     steps:
-   
+    - uses: actions/checkout@v3
 
     - name: Set up Go
       uses: actions/setup-go@v3
@@ -42,8 +42,8 @@ jobs:
         go-version: 1.20
       id: go
 
-    - name: Checkout Code
-    - uses: actions/checkout@v3
+
+   
 
     - name: Run migrations
       run: make migrateup
