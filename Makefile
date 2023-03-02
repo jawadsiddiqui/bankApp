@@ -7,7 +7,7 @@ createdb:
 dropdb:
 	docker exec -it postgres-tors dropdb simple_bank
 
-migrationup:
+migrateup:
 	migrate -path db/migration -database "postgres://root:secret@localhost/simple_bank?sslmode=disable" -verbose up
 
 migratedown:
