@@ -15,3 +15,6 @@ migratedown:
 
 fixdirtymigration:
 	migrate -path db/migration -database "postgres://root:secret@localhost/simple_bank?sslmode=disable" -verbose force 15
+
+test: 
+	go test -v -cover ./...
