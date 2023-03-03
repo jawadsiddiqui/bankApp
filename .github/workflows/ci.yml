@@ -56,5 +56,8 @@ jobs:
     - name: Run migrations
       run: make migrateup
 
+    - name: go env
+      run: go env
+      
     - name: Test
       run: make test
