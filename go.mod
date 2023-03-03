@@ -1,6 +1,6 @@
 module github.com/jawadsiddiqui/go-app
 
-go 1.15
+go 1.16
 
 require (
 	github.com/go-pg/pg v8.0.7+incompatible // indirect
